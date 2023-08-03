@@ -1,0 +1,1589 @@
+<html>
+
+<header>
+
+
+</header>
+
+
+<!-- Mirrored from www.rstp.ca/calc/components/single-calc/single-calc.php?mode=childtab&tab=3&lang=fr by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 15:05:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<body>
+
+
+
+
+
+
+
+<!-- - remove inkind from maternity section
+- total calc -->		
+
+
+				<script src="../../BoxOver.js"></script>
+
+
+				<div id="calc-form" class="calc-form-frame">
+
+					<div class="article-header" style="margin: 25px 5px;">
+						<!-- <h1 class="p-title">Calculateur du soutien financier minimal</h1> -->
+						<div class="content-column one_half-not" style="font-size: 18px; padding-right: 35px;">
+
+								
+Au moment de l’arrivée, les montants calculés pour cette personne devraient être versés directement dans son propre compte bancaire individuel. Les personnes parrainées ayant atteint l’âge de la majorité à leur arrivée, ainsi que celles qui atteignent l’âge de la majorité au cours de l’année de parrainage, doivent recevoir une allocation de démarrage et des allocations mensuelles pour les besoins essentiels, les communications et le transport (et le logement, au besoin) en fonction <b>des taux du PAR pour les personnes célibataires</b> (c’est-à-dire que les personnes ayant atteint l’âge de la majorité ne doivent pas être considérées comme des personnes à charge dans le calcul du soutien financier exigé). 
+   
+
+
+								
+
+						</div>
+						<div class="content-column one_half-not" style="font-size: 18px; padding-right: 35px;">
+							<!-- Please note that this tool provides an estimation of the minimum sponsorship costs and sponsors should budget based on the actual costs of living in the community of settlement. Sponsors should always refer to the RAP rates for the most up to date and accurate information.<br/><br/> -->
+
+							<!-- Also, note that the sponsorship costs could be affected by other factors, including: <br/>
+							- a dependent turn 18 during the sponsorship year <br/>
+							- a baby is born during the sponsorship year <br/>
+							- if an adult family member moves to a different residence or a community of settlement<br/> -->
+						</div>
+					</div>
+
+
+
+
+
+
+
+ 
+
+
+					<div class="calc-form-section" style="float: left; width: auto; display: none; ">
+						<h2>Renseignements de la famille</h2>
+						<div style="color: black; margin-bottom: 20px;">Saisir les renseignements de la famille parrainée</div>
+					</div>
+
+					<input type="submit" value="Calculer le soutien minimal" class="wpcf7-form-control wpcf7-submit button style2" style="float: right; margin: 0 0 0 15px;" onclick="show_results();">
+					
+					<div style="float: right;">
+						<input type="submit" value="Tout effacer" class="wpcf7-form-control wpcf7-submit button style2" style="float: right; margin: 0 0 0 0; background-color: #9e9e9e; border-color: #9e9e9e;" onclick="clear_all();">
+					</div>  
+
+					<div class="calc-form-section hide-for-childtab" style=" display: none; ">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Communauté d’établissement :</div>
+							<div class="calc-form-field-description">Choisir dans la liste</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+								<!-- <input type="text" name="field__province" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder="Ontario"> -->
+
+								<div id="selector-city-on" class="">
+				                <select id="field__city__on" name="field__city__on"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: block; max-width: 350px; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>		
+				                    <option value="chatham">Chatham</option>			                    
+				                    <option value="hamilton">Hamilton</option>
+				                    <option value="kapuskasing">Kapuskasing</option>
+				                    <option value="kingston">Kingston</option>
+				                    <option value="kitchener">Kitchener</option>                    
+				                    <option value="leamington">Leamington</option>
+				                    <option value="london">London</option>
+				                    <!-- <option value="mississauga">Mississauga</option> -->
+				                    <option value="orangeville">Orangeville</option>
+				                    <option value="ottawa">Ottawa</option>
+				                    <option value="peterborough">Peterborough</option>                    
+				                    <option value="saultestemarie">Sault Ste. Marie</option>
+				                    <option value="thunderbay">Thunder Bay</option>
+				                    <option value="toronto" selected>Région du Grand Toronto *</option>
+				                    <option value="windsor">Windsor</option>
+				                    <option value="other">Autre</option>      
+				                </select>
+
+
+
+				                </div>
+
+				                <div id="selector-city-al" class="">
+				                <select id="field__city__al" name="field__city__al"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="brooks">Brooks</option>
+				                    <option value="calgary">Calgary</option>
+				                    <option value="edmonton" selected>Edmonton</option> 
+				                    <option value="fortmacmurray" selected>Fort MacMurray</option>  
+				                    <option value="grandeprairie" selected>Grande Prairie</option>                 
+				                    <option value="lethbridge">Lethbridge</option>
+				                    <option value="leduc">Leduc</option>				                    
+				                    <option value="medicinehat">Medicine Hat</option>
+				                    <option value="reddeer">Red Deer</option>
+				                    <option value="stalbert" selected>St Albert</option>
+				                    <option value="other">Autre</option>      
+				                </select>	
+				                </div>
+				                
+		                
+				                <div id="selector-city-bc" class="selector-city">
+				                <select id="field__city__bc" name="field__city__bc"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="abbotsford">Abbotsford</option>
+				                    <option value="kelona">Kelowna</option>
+				                    <option value="nanaimo">Nanaimo</option>  
+				                    <option value="princegeorge">Prince George</option> 
+				                    <option value="vancouver" selected>Vancouver</option>
+				                    <option value="vernon">Vernon</option>
+				                    <option value="victoria">Victoria</option>
+				                    <option value="other">Autre</option>      
+				                </select>					                				                
+				                </div>
+
+
+
+				                <div id="selector-city-mn" class="selector-city">
+				                <select id="field__city__mn" name="field__city__mn"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="brandon">Brandon</option>
+				                    <option value="winnipeg" selected>Winnipeg</option>
+				                    <option value="other">Autre</option>      
+				                </select>					                				                
+				                </div>
+
+				                <div id="selector-city-nb" class="selector-city">
+				                <select id="field__city__nb" name="field__city__nb"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="fredericton">Fredericton</option>
+				                    <option value="moncton">Moncton</option>
+				                    <option value="saintjohn" selected>Saint John</option>                    
+				                    <option value="other">Autre</option>      
+				                </select>					                				                
+				                </div>
+
+				                <div id="selector-city-nl" class="selector-city">
+				                <select id="field__city__nl" name="field__city__nl"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="stjohns" selected>St. Johns</option>
+				                    <option value="nflisland">Île de Terre-Neuve</option>
+				                    <option value="other">Autre</option>      
+				                </select>					                				                
+				                </div>
+
+				                <div id="selector-city-ns" class="selector-city">
+				                <select id="field__city__ns" name="field__city__ns"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="halifax" selected>Halifax</option>
+				                    <option value="other">Autre</option>      
+				                </select>					                				                
+				                </div>
+
+				                <div id="selector-city-pe" class="selector-city">
+				                <select id="field__city__pe" name="field__city__pe"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="charlottetown" selected>Charlottetown</option>
+				                    <option value="other">Autre</option>      
+				                </select>					                				                
+				                </div>
+
+				                <div id="selector-city-sa" class="selector-city">
+				                <select id="field__city__sa" name="field__city__sa"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector selector-city" style="display: none; font-size: 20px;" onchange="javascript:update_data();"  disabled  >
+				                    <option ></option>					                    
+				                    <option value="moosejaw">Moose Jaw</option>
+				                    <option value="princealbert">Prince Albert</option>
+				                    <option value="regina">Regina</option>                    
+				                    <option value="saskatoon" selected>Saskatoon</option>
+				                    <option value="other">Autre</option>      
+				                </select>					                				                
+				                </div>
+
+				                		
+				               	<div id="selector-province" class="">				               
+				                <select id="field__province" name="field__province"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector " style="max-width: 370px;font-size: 20px;" onchange="javascript:update_data();" readonly  disabled  >
+				                    <option ></option>
+				                    <option value="al">Alberta</option>
+				                    <option value="bc">Colombie-Britannique</option>
+				                    <option value="mn">Manitoba</option>
+				                    <option value="nb">Nouveau-Brunswick</option>                    
+				                    <option value="nl">Terre-Neuve-et-Labrador</option>
+				                    <option value="ns">Nouvelle-Écosse</option>
+				                    <option value="on" selected>Ontario</option>
+				                    <option value="pe">Île-du-Prince-Édouard</option>
+				                    <!-- <option value="on">Quebec</option>  -->                   
+				                    <option value="sa">Saskatchewan</option>
+				                    <!-- <option value="on">Northwest Territories</option>
+				                    <option value="on">Nunavut</option>
+				                    <option value="on">Yukon</option> -->
+				                </select>
+				                </div>
+ 
+ 
+<div id="city-desc-gta" style="display: block; float: right; clear: both; margin-top: 15px;">
+				                Le Grand Toronto comprend 6 régions : <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="18" height="18" 
+								title="header=[Région du Grand Toronto] body=[* Région de Durham - Ajax, Clarington, Brock, Oshawa, Pickering, Scugog, Uxbridge, Whitby<br>  * Région de Halton  - Burlington, Halton Hills, Milton, Oakville<br>  * Région de Peel - Brampton, Caledon, Mississauga<br>  * Région d’York - Aurora, East Gwillimbury, Georgina, King, Markham, Newmarket, Richmond Hill, Vaughan, Whitchurch-Stouffville<br>  * Comté de Dufferin - Mono, Orangeville<br>  * Comté de Simcoe - Bradford West Gwillimbury, New Tecumseth<br>] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+
+
+
+  </div>
+
+							</div>
+						</div>						
+					</div>
+
+					<div class="calc-form-section hide-for-childtab" style=" display: none;">
+						<div class="content-column one_half" style="margin-bottom: 15px;">
+							<div class="calc-form-field-name">Date d’arrivée prévue ou réelle :</div>
+							<div class="calc-form-field-description">Les familles ayant des enfants d’âge scolaire qui arrivent entre le 1er septembre et le 31 mai ont droit à recevoir l’allocation scolaire initiale deux fois.</div>
+						</div>
+						<div class="content-column one_half">
+							<div id="expected_date_section" style="float: right;">
+
+										                                        <select name="item_date_day" id="item_date_day" aria-label="Day" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="float: left; font-size: 100%; width: auto;"  disabled  >
+                                            <!-- <option value="" > - </option> -->
+                                            <option value='1' >1</option><option value='2' >2</option><option value='3' >3</option><option value='4' >4</option><option value='5' >5</option><option value='6' >6</option><option value='7' >7</option><option value='8' >8</option><option value='9' >9</option><option value='10' >10</option><option value='11' >11</option><option value='12' >12</option><option value='13' >13</option><option value='14' >14</option><option value='15' >15</option><option value='16' >16</option><option value='17' >17</option><option value='18' >18</option><option value='19' >19</option><option value='20' >20</option><option value='21' >21</option><option value='22' >22</option><option value='23' >23</option><option value='24' >24</option><option value='25' >25</option><option value='26' >26</option><option value='27' >27</option><option value='28' >28</option><option value='29' >29</option><option value='30' >30</option><option value='31' >31</option>                                        </select>
+                                        
+                                        <select name="item_date_month" id="item_date_month" aria-label="Month" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="float: left; font-size: 100%; width: auto;"   disabled >
+                                            <option value="" > - </option>
+                                            <option value="1"  selected>Janvier</option>
+                                            <option value="2"  >Février</option>
+                                            <option value="3"  >Mars</option>
+                                            <option value="4"  >Avril</option>
+                                            <option value="5"  >Mai</option>
+                                            <option value="6"  >Juin</option>
+                                            <option value="7"  >Juillet</option>
+                                            <option value="8"  >Août</option>
+
+                                            <option value="9"  >Septembre</option>
+
+                                            <option value="10" >Octobre</option>
+                                            <option value="11" >Novembre</option>
+                                            <option value="12" >Décembre</option>
+                                        </select>
+
+                                         
+
+                                        <select name="item_date_year" id="item_date_year" aria-label="Year" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="float: left; font-size: 100%; width: auto;"  disabled  >
+                                            <option value='2022' selected>2022</option><option value='2023' >2023</option><option value='2024' >2024</option><option value='2025' >2025</option><option value='2026' >2026</option><option value='2027' >2027</option><option value='2028' >2028</option><option value='2029' >2029</option><option value='2030' >2030</option><option value='2031' >2031</option><option value='2032' >2032</option><option value='2033' >2033</option><option value='2034' >2034</option>                                        </select>
+
+
+								<!-- <input type="text" name="field__family_composition" value="Couple" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder=""> -->
+				                <select id="field__family_composition1" name="field__family_composition1"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="font-size: 20px; display: none;" onchange="javascript:update_data('field__family_composition');">
+
+											
+
+									<option value="single-under22" selected>Single - Under 22</option>		                    
+
+									
+				                </select>									
+							</div>
+
+
+
+
+
+							<div style="float: right; clear: both; margin-top: 10px; width: 300px;">
+                                <label class="checkbox chckbox-list-item" style="min-height: 1em; font-size: 20px; cursor: pointer;" onclick="toggle_date(this);">
+                                	<input type="checkbox" name="date_unknown" id="date_unknown" value="" style="margin-right: 5px; height: 17px; width: 20px; float: left;">
+                                	<div onclick="toggle_date(this);" style="float: left; margin-top: -4px; cursor: pointer;">Date inconnue</div> 
+                                </label>
+                            </div>  
+
+<script>
+
+function toggle_date(e) { 
+
+	console.log('x');
+
+    $("#item_date_day").val("1");
+    $("#item_date_month").val("1");
+    $("#item_date_year").val("2022");
+
+	$("#expected_date_section").toggle();
+
+
+
+}
+
+// $('#date_unknown').click(function(e) { 
+
+// console.log('x');
+
+// });	
+
+
+</script>
+						</div>						
+					</div>					
+											
+					<div class="calc-form-section" style="display: none;">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Taille de la famille :</div>
+							<div class="calc-form-field-description">Nombre de personnes </div>
+						</div>   
+						<div class="content-column one_half">
+							<div>    
+								<!-- <input type="text" name="field__family_size" value="3" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder=""> -->
+				                <select id="field__family_size" name="field__family_size" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector"  onchange="javascript:update_data('field__family_size');">
+				                    
+											
+
+									<option></option>
+									<option selected>1</option>			                    
+
+										
+
+				                    <option>2</option>
+				                    <option>3</option>
+				                    <option>4</option>
+				                    <option>5</option>                    
+				                    <option>6</option>
+				                    <option>7</option>  
+				                    <option>8</option>
+				                    <option class="hidden-for-pei">9</option>                    
+				                    <option class="hidden-for-pei">10</option>
+				                    <option class="hidden-for-pei">11</option>
+				                    <option class="hidden-for-pei">12</option>
+				                    <!-- <option class="hidden-for-pei">13</option>                    
+				                    <option class="hidden-for-pei">14</option>
+				                    <option class="hidden-for-pei">15</option>   
+				                    <option class="hidden-for-pei">16</option>
+				                    <option class="hidden-for-pei">17</option>
+				                    <option class="hidden-for-pei">18</option>                    
+				                    <option class="hidden-for-pei">19</option> -->	
+				                    		                             
+				                </select>										
+							</div>
+						</div>						
+					</div>
+											
+					<div class="calc-form-section hide-for-childtab" style=" display: none;">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Situation des adultes :</div>
+							<div class="calc-form-field-description">Choisir dans la liste</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+								<!-- <input type="text" name="field__family_composition" value="Couple" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder=""> -->
+				                <select id="field__family_composition" name="field__family_composition"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="font-size: 20px;" onchange="javascript:update_data('field__family_composition');"  disabled >
+
+											
+
+									<option value="single-under22" selected>Célibataire (moins de 22 ans)</option>		                    
+
+									
+				                </select>									
+							</div>
+						</div>						
+					</div>
+											
+					<div class="calc-form-section" style="display: none;"> 
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Nombre d’enfants : </div>
+							<div class="calc-form-field-description">Saisir un chiffre</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+								<!-- <input type="text" name="field__number_of_children" value="1" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder=""> -->
+				                <select id="field__number_of_children" name="field__number_of_children"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_data('field__number_of_children');">
+				                    <option></option>
+				                    <option selected>0</option>
+				                    <option>1</option>
+				                    <option>2</option>
+				                    <option>3</option>
+				                    <option>4</option>
+				                    <option>5</option>                    
+				                    <option>6</option>
+				                    <option class="hidden-for-pei">7</option>  
+				                    <option class="hidden-for-pei">8</option>
+				                    <option class="hidden-for-pei">9</option>                    
+				                    <option class="hidden-for-pei">10</option>
+				                    <!-- <option>11</option>
+				                    <option>12</option>
+				                    <option>13</option>                    
+				                    <option>14</option>
+				                    <option>15</option>   
+				                    <option>16</option>
+				                    <option>17</option>
+				                    <option>18</option>                    
+				                    <option>19</option> -->	
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="calc-form-section">
+						<div class="content-column one_half">
+							<div class="calc-form-label"></div>
+							<div class="calc-form-label"></div>
+						</div>
+						<div class="content-column one_half">
+							<div class="calc-form-label"></div>
+							<div class="calc-form-label"></div>
+						</div>						
+					</div>
+ 
+					<div class="calc-form-section" style="display: none;">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Live with principal applicant </div>
+							<div class="calc-form-field-description">Please say "Yes" only if the shelter is adequate for the whole household
+							and is provided without cost by someone other than the sponsored person(s) who is within their sponsorship period.
+
+
+							</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+				                <select id="field__is_live_with_parent" name="field__is_live_with_parent"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_data();">
+				                    <option selected>Non</option>					                
+				                    <option>Oui</option>
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+					<div class="calc-form-section">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Maternité : (Indiquer si cette personne à charge est enceinte) </div>
+							<div class="calc-form-field-description"></div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+				                <select id="field__is_pregnant" name="field__is_pregnant"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_data();">
+				                    <option selected>Non</option>					                
+				                    <option>Oui</option>
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+					<div class="calc-form-section">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Indiquer si cette personne à charge a un régime alimentaire special.</div>
+							<div class="calc-form-field-description">Les réfugiés peuvent recevoir une allocation pour régime alimentaire spécial de 75 $/mois (par famille) s’ils présentent un billet d’un médecin (ou d’une infirmière praticienne) expliquant qu’ils ont un problème de santé exigeant un régime spécialisé.</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+				                <select id="field__has_dietary_needs" name="field__has_dietary_needs"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_data();">
+				                    <option selected>Non</option>					                
+				                    <option>Oui</option>
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+					<div class="calc-form-section" style="display: none;">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Number of Individuals Aged 65 or Older:</div>
+							<div class="calc-form-field-description">As of Date of Arrival</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+								<!-- <input type="text" name="field__number_of_children" value="1" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder=""> -->
+				                <select id="field__number_of_seniors" name="field__number_of_seniors"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_data();">
+				                    <option selected>0</option>
+				                    <option>1</option>
+				                    <option>2</option>
+				                    <option>3</option>
+				                    <option>4</option>
+				                    <option>5</option>                    
+				                    <option>6</option>
+				                    <option>7</option>  
+				                    <option>8</option>
+				                    <option>9</option>                    
+				                    <option>10</option>
+				                    <option>11</option>
+				                    <option>12</option>
+				                    <option>13</option>                    
+				                    <option>14</option>
+				                    <option>15</option>   
+				                    <option>16</option>
+				                    <option>17</option>
+				                    <option>18</option>                    
+				                    <option>19</option>	
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+
+					<div id="section-intake-disability" class="calc-form-section" style="display: none;">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Nombre de personnes ayant un handicap/étant incapables de travailler :</div>
+							<div class="calc-form-field-description">Un billet d’un médecin sera requis pour recevoir une allocation d’incapacité. <!-- (Indicate if there is a disabled or non employable family member) --><!-- As of Date of Arrival --></div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+								<!-- <input type="text" name="field__number_of_children" value="1" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder=""> -->
+				                <select id="field__number_of_disabled" name="field__number_of_disabled"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_data();">
+				                    <option selected>0</option>
+				                    <option>1</option>
+				                    <option>2</option>
+				                    <!-- <option>3</option>
+				                    <option>4</option>
+				                    <option>5</option>                    
+				                    <option>6</option>
+				                    <option>7</option>  
+				                    <option>8</option>
+				                    <option>9</option>                    
+				                    <option>10</option>
+				                    <option>11</option>
+				                    <option>12</option>
+				                    <option>13</option>                    
+				                    <option>14</option>
+				                    <option>15</option>   
+				                    <option>16</option>
+				                    <option>17</option>
+				                    <option>18</option>                    
+				                    <option>19</option>	 -->
+				                </select>									
+							</div>
+						</div>						
+					</div>  
+
+					<div class="calc-form-section">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Revenu mensuel total ($CAD):</div>
+
+											
+
+							<div class="calc-form-field-description" style="margin-bottom: 15px;">Ce montant comprend seulement le revenu total net de la personne à charge ayant atteint l’âge de la majorité. Toutefois, il ne comprend pas les versements de l’Allocation canadienne pour enfants ni le revenu des membres de la famille qui sont aux études à temps plein.</div>
+
+									
+
+
+						</div>
+						<div class="content-column one_half">
+							<div>
+								<!-- <input type="text" id="field__total_monthly_income" name="field__total_monthly_income" value="0" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text" aria-required="true" aria-invalid="false" placeholder="" style="height: 60px;" type="number" pattern="(d{3})([.])(d{2})">  -->
+
+
+						    <div class="input-group calc-form-field calc-form-field-text" style="padding: 0; height:60px"> 
+						        
+						        
+
+						        <!-- min="0" step="1"  data-number-stepfactor="100" type="number" -->
+
+						        
+						        <input id="field__total_monthly_income" name="field__total_monthly_income" type="text" value="" data-number-to-fixed="2" pattern="(d{3})([.])(d{2})" class="form-control currency calc-form-field calc-form-field-text" id="c2" style="height:60px; border: none;" />
+
+						        <span class="input-group-addon">$</span>
+
+						        
+						    </div> 									
+
+				         								
+							</div>
+						</div>						
+					</div>
+
+
+
+
+
+
+					<div class="calc-form-section section-children-details" style="display: none;">
+						<div class="">
+							<div class="calc-form-field-name">Enfants :</div>
+							<div class="calc-form-field-description">Saisir les renseignements sur les enfants ici (ne prendre en compte que les enfants qui n’ont pas atteint l’âge de la majorité. Pour chaque enfant majeur, faites un calcul distinct en cliquant sur le bouton « Ajouter une personne à charge ayant atteint l’âge de la majorité »)</div>
+						</div>
+					</div>
+
+					<div class="calc-form-section section-children-details" style="display: none;">
+
+						<div id="section__child_age_1" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 1</div>
+							<input type="text" id="field__child_age_1" name="field__child_age_1" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_2" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 2</div>
+							<input type="text" id="field__child_age_2" name="field__child_age_2" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_3" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 3</div>
+							<input type="text" id="field__child_age_3" name="field__child_age_3" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_4" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 4</div>
+							<input type="text" id="field__child_age_4" name="field__child_age_4" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_5" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 5</div>
+							<input type="text" id="field__child_age_5" name="field__child_age_5" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_6" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 6</div>
+							<input type="text" id="field__child_age_6" name="field__child_age_6" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_7" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 7</div>
+							<input type="text" id="field__child_age_7" name="field__child_age_7" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_8" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 8</div>
+							<input type="text" id="field__child_age_8" name="field__child_age_8" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_9" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 9</div>
+							<input type="text" id="field__child_age_9" name="field__child_age_9" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div id="section__child_age_10" class="column-children">
+							<div class="calc-form-field-description-in-column">Âge de l’enfant no 10</div>
+							<input type="text" id="field__child_age_10" name="field__child_age_10" value="" size="" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field-in-column" aria-required="true" aria-invalid="false" placeholder="" onchange="javascript:update_data();">
+							<div class="message__child_input"></div>
+						</div>
+
+						<div class="message__child_input__general"></div>
+
+					</div>
+
+<!-- 						
+					<div class="calc-form-section">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Number of Pre-school Aged Children:</div>
+							<div class="calc-form-field-description">Enter a number</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+				                <select id="field__number_of_children" name="field__number_of_children"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_year();">
+				                    <option ></option>
+				                    <option>1</option>
+				                    <option>2</option>
+				                    <option selected>3</option>
+				                    <option>4</option>
+				                    <option>5</option>                    
+				                    <option>6</option>
+				                    <option>7</option>  
+				                    <option>8</option>
+				                    <option>9</option>                    
+				                    <option>10</option>
+				                    <option>11</option>
+				                    <option>12</option>
+				                    <option>13</option>                    
+				                    <option>14</option>
+				                    <option>15</option>   
+				                    <option>16</option>
+				                    <option>17</option>
+				                    <option>18</option>                    
+				                    <option>19</option>	
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+					<div class="calc-form-section">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Number of School Aged Children (K-12):</div>
+							<div class="calc-form-field-description">Enter a number</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+				                <select id="field__number_of_children" name="field__number_of_children"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_year();">
+				                    <option ></option>
+				                    <option>1</option>
+				                    <option>2</option>
+				                    <option selected>3</option>
+				                    <option>4</option>
+				                    <option>5</option>                    
+				                    <option>6</option>
+				                    <option>7</option>  
+				                    <option>8</option>
+				                    <option>9</option>                    
+				                    <option>10</option>
+				                    <option>11</option>
+				                    <option>12</option>
+				                    <option>13</option>                    
+				                    <option>14</option>
+				                    <option>15</option>   
+				                    <option>16</option>
+				                    <option>17</option>
+				                    <option>18</option>                    
+				                    <option>19</option>	
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+					<div class="calc-form-section">
+						<div class="content-column one_half">
+							<div class="calc-form-field-name">Number of Choldren Between the Ages 18-21:</div>
+							<div class="calc-form-field-description">As of Date of Arrival</div>
+						</div>
+						<div class="content-column one_half">
+							<div>
+				                <select id="field__number_of_children" name="field__number_of_children"  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required calc-form-field calc-form-field-text big-selector" style="" onchange="javascript:update_year();">
+				                    <option ></option>
+				                    <option>1</option>
+				                    <option>2</option>
+				                    <option selected>3</option>
+				                    <option>4</option>
+				                    <option>5</option>                    
+				                    <option>6</option>
+				                    <option>7</option>  
+				                    <option>8</option>
+				                    <option>9</option>                    
+				                    <option>10</option>
+				                    <option>11</option>
+				                    <option>12</option>
+				                    <option>13</option>                    
+				                    <option>14</option>
+				                    <option>15</option>   
+				                    <option>16</option>
+				                    <option>17</option>
+				                    <option>18</option>                    
+				                    <option>19</option>	
+				                </select>									
+							</div>
+						</div>						
+					</div>
+
+-->
+
+
+
+
+
+
+
+					<div class="calc-form-section">
+
+						<input type="submit" value="Calculer le soutien minimal" class="wpcf7-form-control wpcf7-submit button style2" style="float: right; margin: 35px 0;" onclick="show_results();">
+
+						<input type="submit" value="Tout effacer" class="wpcf7-form-control wpcf7-submit button style2" style="float: right; margin: 35px 20px; background-color: #9e9e9e; border-color: #9e9e9e;" onclick="clear_all();">
+
+
+				        <!-- <div class="tab-add wpcf7-form-control wpcf7-submit button style2" style="float: left; padding: 5px 15px; margin: 35px 0;"  onclick="add_tab();"> + Add <br/>Adult Dependant
+				        </div>  -->
+
+				        <div style="margin: 45px 5px 45px; font-size: 20px; clear: both; float: right;">
+				        	Assurez-vous d’avoir effacé les données antérieures avant d’effectuer un nouveau calcul.							
+						</div>			
+
+						<span class="ajax-loader"></span>
+					</div>						
+
+
+					<!-- 						
+					<div class="calc-form-section">
+						<h2></h2>
+						<div></div>
+					</div> -->
+
+
+
+				</div> <!--  end of calc-form  -->
+
+			
+
+
+
+
+
+
+
+				<div id="calc-results" class="calc-form-frame" style="display: none;">
+
+					<div>
+
+						<!-- <div class="article-header">
+							<h1 class="page-title">Calculateur du soutien financier minimal</h1>
+						</div> -->
+
+
+						<div class="calc-form-section">
+							<!-- <h2>The Minimum Required Financial Support</h2> -->
+							<div id="calc-results-message" style="color: red; margin-bottom: 25px; float: left; font-size: 20px; line-height: 30px; font-weight: bold; display: none;"></div>
+
+							<div style="color: black; margin-bottom: 20px; float: left; clear: both;">
+
+								<div class="wpcf7-form-control wpcf7-submit button style2" onclick="show_form();" style="cursor: pointer; float: right; width: auto; background-color: white; border-color: #9e9e9e; color: black; line-height: 50px; margin: 5px 0 0 25px;">< Retour</div>
+
+								<input type="submit" value="Tout effacer" class="wpcf7-form-control wpcf7-submit button style2" style="float: right; background-color: #9e9e9e; border-color: #9e9e9e; clear: right; margin: 5px 0 0 25px;" onclick="clear_all();">
+
+								Veuillez noter que cet outil calcule une estimation des coûts minimaux du parrainage. Les groupes de parrainage devraient préparer le budget en tenant compte des coûts de la vie réels dans la communauté d’établissement.								<br><br>
+								Les dons en nature comprennent des biens, produits ou services (tels que des meubles ou des vêtements en bon état, ou un logement offert gratuitement à la famille parrainée). Un certain pourcentage de la valeur d’un don en nature peut être déduit du montant de soutien financier fourni pour couvrir les coûts de démarrage des réfugiés parrainés. Il est interdit de dépasser le pourcentage précisé.								<br><br>
+								La valeur maximale des articles offerts en don pouvant être prise en compte dans le calcul des coûts de démarrage et des coûts mensuels du parrainage se trouve dans l’Annexe A du Guide de demande de parrainage à l’intention des <a target='_blank' href='https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-parrainer-refugies-signataires-entente-groupes-constitutifs.html#anna'>SEP</a>, <a target='_blank' target='_blank' href='https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-parrainer-refugies-refugies-groupes-cinq.html#annexeA'>Groupes de cinq</a> ou <a target='_blank' href='https://www.canada.ca/fr/immigration-refugies-citoyennete/services/demande/formulaires-demande-guides/guide-parrainer-refugies-repondants-communautaires.html#annA'>Répondants communautaires</a>. Les déductions maximales permissibles pour dons en nature sont également indiquées  à côté de chaque catégorie. La valeur des dons en nature ne peut pas être supérieure à leur valeur réelle ni au montant déductible maximal.
+								<!-- The results based on your situation:  --><span id="result-selections-details-short" style="display: none;"></span>
+								<br><br>
+<!-- 
+ Please consider the following rules regarding the allowable in-kind deduction rates. The percentages listed below are the maximum permitted deductions and may not be further reduced.  -->
+
+<!--  , and you are not allowed to reduce more than the allowable percentage provided below. -->
+<!--  <br><br>
+
+<div style="float: left; padding-right: 30px;">
+	<div class="calc-results-desc-item" style="clear: both;">Food staples: 50%</div>	
+	<div class="calc-results-desc-item" style="clear: both;">Clothing: 70%</div>
+	<div class="calc-results-desc-item" style="clear: both;">Household needs: 50%</div>
+</div>
+<div style="float: left; ">
+	<div class="calc-results-desc-item" style="clear: both;">Furniture: 70%</div>
+	<div class="calc-results-desc-item" style="clear: both;">Shelter: 100%</div>
+	<div class="calc-results-desc-item" style="clear: both;">Linens: 100%</div>
+	<div class="calc-results-desc-item" style="clear: both;">School supplies: 50%</div>
+</div> -->
+						
+							</div>
+
+							
+						</div>					
+
+						<table class="calc-result-table">
+						    <caption></caption>
+						    <!-- <thead>
+						      <tr>
+						        <th scope="column"></th>
+						        <th scope="column">Monthly</th>
+						        <th scope="column">Annual</th>
+						        <th scope="column">In-Kind Support</th>
+						        <th scope="column">Total</th>
+						      </tr>
+						    </thead> -->
+						    <tbody>
+
+<!-- 						      <tr>
+						        <td scope="column"></td>
+						        <td scope="column">Monthly</td>
+						        <td scope="column">Annual</td>
+						        <td scope="column">In-Kind Support</td>
+						        <td scope="column">Total</td>						      
+						      </tr> -->
+
+
+
+						      <tr>
+						        <td class="calc-result-table-heading calc-result-table-h1" style="min-width: 300px;">Coûts de démarrage <div style="font-size: 15px; line-height: 15px; font-family: sans-serif;">(Et valeur déductible maximale des dons en nature)</div>
+</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Ponctuel</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;"><!-- Monthly --></td>
+						        <td class="calc-result-table-heading" scope="column" style="min-width: 160px;">Soutien en nature</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Ponctuel ajusté</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;"><!-- Total Monthly --></td>
+						      </tr>
+
+<!-- 						        <td id="value_1_1"></td>
+						        <td id="value_1_2"></td>
+						        <td id="value_1_3"></td>
+						        <td id="value_1_4"></td> -->						      
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation pour produits de première nécessité (50 %)  
+						        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+								title="header=[L’allocation pour produits de première nécessité] body=[est accordée pour couvrir les dépenses reliées à l’installation d’une famille dans un nouveau logement, dont les denrées alimentaires de base (comme la farine, le sucre, le riz et les épices) et les produits de nettoyage.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+								</td>
+						        <td id="value_2_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_2_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_2_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_2_3','value_2_4','amount','1','1','5');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_2_3','value_2_4','percent','1','1','5');">
+						        	<div class="calc-result-table-input-label">%</div>						        	
+						        </td>
+						        <td id="value_2_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_2_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation pour les vêtements ordinaires (70 %) 
+						        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+								title="header=[Allocation pour vêtements réguliers et saisonniers] body=[Le versement initial aux réfugiés, quelle que soit la date d’arrivée au Canada, devrait comprendre 375 $ pour les adultes et 250 $ pour chaque enfant à charge pour couvrir le coût des vêtements réguliers et saisonniers.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        </td>
+						        <td id="value_3_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_3_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_3_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_3_3','value_3_4','amount','2','2','5');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_3_3','value_3_4','percent','2','2','5');">
+						        	<div class="calc-result-table-input-label">%</div>						        	
+						        </td>
+						        <td id="value_3_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_3_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation pour les vêtements d’hiver (70 %) 
+						        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+								title="header=[Allocation pour les vêtements d’hiver] body=[Couvre le coût d’un manteau d’hiver, de bottes, de mitaines, d’une écharpe, de pantalons de neige, d’un imperméable, etc.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        </td>
+						        <td id="value_4_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_4_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_4_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_4_3','value_4_4','amount', '3','3','5');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_4_3','value_4_4','percent', '3','3','5');">
+						        	<div class="calc-result-table-input-label">%</div>						        	
+						        </td>
+						        <td id="value_4_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_4_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation pour les articles ménagers de base (50 %)
+						        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+								title="header=[L’allocation pour les articles ménagers de base] body=[est destinée à couvrir les coûts des couvre-fenêtres et des effets ménagers courants, comme les ustensiles et une batterie de cuisine, des balais et des vadrouilles.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        </td>
+						        <td id="value_5_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_5_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_5_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_5_3','value_5_4','amount', '4','4','5');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_5_3','value_5_4','percent', '4','4','5');">
+						        	<div class="calc-result-table-input-label">%</div>						        	
+						        </td>
+						        <td id="value_5_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_5_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation pour les meubles (70 %) 
+						        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+								title="header=[Allocation pour les meubles] body=[est accordée pour acheter des meubles essentiels, comme des lits, commodes, sofas, fauteuils et un ensemble de table et chaises. ] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        </td>
+						        <td id="value_6_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_6_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_6_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_6_3','value_6_4','amount', '5','5','5');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_6_3','value_6_4','percent', '5','5','5');">
+						        	<div class="calc-result-table-input-label">%</div>						        	
+						        </td>
+						        <td id="value_6_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_6_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2">Linge de maison (100 %) 
+						        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+								title="header=[Linge de maison] body=[est un versement ponctuel de 80 $ par personne pour acheter la literie et des serviettes.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        </td>
+						        <td id="value_7_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_7_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_7_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_7_3','value_7_4','amount', '6','6','5');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_7_3','value_7_4','percent', '6','6','5');">
+						        	<div class="calc-result-table-input-label">%</div>						        	
+						        </td>
+						        <td id="value_7_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_7_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation pour l’installation des services publics <!-- (Not permitted) --> 
+						        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+								title="header=[L’allocation pour l’installation des services publics ] body=[est un versement ponctuel pour tout le ménage pour couvrir les coûts de l’installation des services publics, du téléphone et d’Internet. ] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        </td>
+						        <td id="value_8_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_8_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_8_3">
+						        	<div class="calc-result-table-input-label" style="display: none;">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_8_3','value_8_4','amount', '7','7','5');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_8_3','value_8_4','percent', '7','7','5');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">%</div>						        	
+						        </td>
+						        <td id="value_8_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_8_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2" style="max-width: 150px;">Allocation scolaire initiale  (50 %)
+							        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+									title="header=[Allocation scolaire initiale] body=[150 $ par enfant d’âge scolaire par année scolaire. Les familles arrivant au Canada entre le 1er septembre et le 31 mai pourraient être admissibles à recevoir ce montant deux fois. Les adultes âgés de 18 à 21 ans doivent démontrer qu’ils sont inscrits à l’école secondaire à temps plein pour être admissibles à cette allocation.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        	<!-- <div style="font-size: 13px; line-height: 15px; font-family: sans-serif;">150 $ par enfant d’âge scolaire par année scolaire. Les familles arrivant au Canada entre le 1er septembre et le 31 mai pourraient être admissibles à recevoir ce montant deux fois.</div> -->
+						        </td>
+						        <td id="value_9_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_9_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_9_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_9_3','value_9_4','amount', '8','8','5');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_9_3','value_9_4','percent', '8','8','5');">
+						        	<div class="calc-result-table-input-label">%</div>	
+						        </td>
+						        <td id="value_9_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_9_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+
+						      <tr>
+						        <td class="calc-result-table-h2-total">Total des coûts de démarrage</td>
+						        <td id="value_10_1" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_10_2" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_10_3"></td>
+						        <td id="value_10_4" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_10_5" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						      </tr>
+
+
+
+
+						      <tr>
+						        <td class="calc-result-table-heading calc-result-table-h1">Coûts mensuels minimaux du parrainage</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;"><!-- One Time --></td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Mensuel</td>
+						        <td class="calc-result-table-heading" scope="column">Soutien en nature</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;"><!-- Total One Time --></td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Mensuel ajusté</td>				        
+						        <!-- <td id="value_1_1"></td>
+						        <td id="value_1_2"></td>
+						        <td id="value_1_3"></td>
+						        <td id="value_1_4"></td> -->
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2" style="max-width: 150px;">Allocation pour les besoins essentiels (nourriture et frais accessoires)  (50 %)
+
+							        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+									title="header=[Allocation pour les besoins essentiels (nourriture et frais accessoires)] body=[L’allocation pour les besoins essentiels peut être réduite de 50 % uniquement si les réfugiés habitent avec une partie au parrainage.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+
+						        	<!-- <div style="font-size: 13px; line-height: 15px; font-family: sans-serif;">L’allocation pour les besoins essentiels peut être réduite de 50 % uniquement si les réfugiés habitent avec une partie au parrainage.</div> --> 
+						        </td>
+						        <td id="value_12_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_12_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_12_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_12_3','value_12_5','amount', '9','10','6');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_12_3','value_12_5','percent', '9','10','6');">
+						        	<div class="calc-result-table-input-label">%</div>
+						        </td>
+						        <td id="value_12_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_12_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation de logement (100 %)
+							        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+									title="header=[Allocation de logement] body=[L’allocation pour le logement, qui est fondée sur les besoins, peut être fournie entièrement sous forme de soutien en nature, à condition que le logement soit offert gratuitement par une personne autre qu’un réfugié dont l’année de parrainage est en cours.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        	<!-- <div style="font-size: 13px; line-height: 15px; font-family: sans-serif;">L’allocation pour le logement, qui est fondée sur les besoins, peut être fournie entièrement sous forme de soutien en nature, à condition que le logement soit offert gratuitement par une personne autre qu’un réfugié dont l’année de parrainage est en cours.</div> -->
+						        </td>
+						        <td id="value_13_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_13_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_13_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_13_3','value_13_5','amount', '10','11','6');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_13_3','value_13_5','percent', '10','11','6');">
+						        	<div class="calc-result-table-input-label">%</div>						        	
+						        </td>
+						        <td id="value_13_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_13_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+
+						      <tr>
+						        <td class="calc-result-table-h2">Supplément au logement (100 %)
+							        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+									title="header=[Supplément au logement] body=[Ne s’applique pas si le coût réel du logement est inférieur à l’allocation de logement.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        	<!-- <div style="font-size: 13px; line-height: 15px; font-family: sans-serif;">Ne s’applique pas si le coût réel du logement est inférieur à l’allocation de logement.</div> -->
+						        </td>
+						        <td id="value_16_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_16_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_16_3">
+						        	<div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_16_3','value_16_5','amount', '13','14','6');">
+						        	<div class="calc-result-table-input-label">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_16_3','value_16_5','percent', '13','14','6');">
+						        	<div class="calc-result-table-input-label">%</div>						        
+						        </td>
+						        <td id="value_16_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_16_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+
+						      <tr>
+						        <td class="calc-result-table-h2">Allocation de communications 
+							        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+									title="header=[Allocation de communications] body=[L’allocation de communications sert à couvrir le coût du téléphone et d’une connexion Internet.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>						        
+						        <!-- (Not permitted) --></td>
+						        <td id="value_14_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_14_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_14_3">
+						        	<!-- <div class="calc-result-table-input-label">$</div>
+						        	<input type="text" name="" value="" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_14_3','value_14_5','amount', '11','12','6');">
+						        	<div class="calc-result-table-input-label">or</div>
+						        	<input type="text" name="" value="" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_14_3','value_14_5','percent', '11','12','6');">
+						        	<div class="calc-result-table-input-label">%</div>	 -->					        	
+						        </td>
+						        <td id="value_14_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_14_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+						      <tr>
+						        <td class="calc-result-table-h2" style="max-width: 150px;">Allocation pour le transport							        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+									title="header=[Allocation pour le transport] body=[L’allocation de transport est versée à chaque adulte (y compris les personnes aînées). Cette allocation correspond soit au coût d’un abonnement mensuel pour adultes ou personnes aînées au transport en commun de la région, soit à 75 $ par mois, selon le plus élevé des deux montants. Le transport peut être fourni en nature dans des circonstances exceptionnelles. Pour de plus amples renseignements, consultez la <a target='_blank' src='../../../wp-content/uploads/2020/02/FR_FAQs-summer-2019_AUG-19-update_FINAL.docx.pdf'>Foire aux questions concernant le soutien financier après l'arrivée.</a> ] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        	<!-- <div style="font-size: 13px; line-height: 15px; font-family: sans-serif;">Transportation allowance is provided to each adult including seniors as per the rate of public transit for adults and seniors in their community, or a minimum of $75/month, whichever is greater.<br>In-Kind transportation may be accepted in exceptional circumstances. Please refer to the <a target='_blank' href='https://www.rstp.ca/wp-content/uploads/2019/08/EN-FAQs-update-Summer-2019-AUG-19-update_FINAL.docx-3.pdf'>FAQs on Post-arrival Financial Support</a> for more details.<! -- Please refer to your local public transportation provider for accurate costs - -></div> -->
+						        </td>
+						        <td id="value_15_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_15_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_15_3"></td>
+						        <td id="value_15_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_15_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+  
+						      <tr style="display: none;"> 
+						        <td class="calc-result-table-h2">Complément pour l’âge de la majorité 
+							        <img src="../../images/help_btn.jpg" style="margin: 0 0-5px 5px;" alt=" " width="24" height="22" 
+									title="header=[Age of Majority Top-Up] body=[For dependants turning 18 in provinces where the age of majority is 19 , a living allowance supplement of $150 per person should be provided.] offsetx=[20] cssheader=[rollover_topdiv1] cssbody=[rollover_botdiv1] "/>
+						        </td>
+						        <td id="value_18_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_18_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_18_3">					        	
+						        </td>
+						        <td id="value_18_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_18_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>						      
+
+						      <tr>
+						        <td class="calc-result-table-h2-total">Total des coûts mensuels minimaux du parrainage</td>
+						        <td id="value_17_1" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_17_2" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_17_3"></td>
+						        <td id="value_17_4" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_17_5" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						      </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+						      <tr>
+						        <td class="calc-result-table-heading calc-result-table-h1">Allocations spéciales</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Ponctuel</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Mensuel</td>
+						        <td class="calc-result-table-heading" scope="column" style="display: none;">Soutien en nature</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right; display: none;">Ponctuel ajusté</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right; display: none;">Mensuel ajusté</td>					        
+						      </tr>
+
+						      <tr class="section-result-maternity">
+						        <td class="calc-result-table-h2">Allocation de nourriture de maternité</td>
+						        <td id="value_32_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_32_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_32_3">
+						        	<div class="calc-result-table-input-label" style="display: none;">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_32_3','value_32_5','amount', '14','16','6');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_32_3','value_32_5','percent', '14','16','6');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">%</div>
+						        </td>
+						        <td id="value_32_4" class="column-highlight" style="text-align: right;display: none;"></td>
+						        <td id="value_32_5" class="column-highlight" style="text-align: right;display: none;"></td>
+						      </tr>
+						      <tr class="section-result-maternity">
+						        <td class="calc-result-table-h2">Allocation de vêtements de maternité</td>
+						        <td id="value_33_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_33_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_33_3" style="display: none;>
+						        	<div class="calc-result-table-input-label" style="display: none;">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_33_3','value_3_4','amount', '15','17','5');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_33_3','value_3_4','percent', '15','17','5');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">%</div>
+						        </td>
+						        <td id="value_33_4" class="column-highlight" style="text-align: right;display: none;"></td>
+						        <td id="value_33_5" class="column-highlight" style="text-align: right;display: none;"></td>
+						      </tr>
+						      <tr class="section-result-maternity-not section-result-newborn-allowance">
+						        <td class="calc-result-table-h2">Allocation de nouveau-né</td>
+						        <td id="value_34_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_34_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_34_3">
+						        	<div class="calc-result-table-input-label" style="display: none;">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_34_3','value_34_4','amount', '16','18','5');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_34_3','value_34_4','percent', '16','18','5');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">%</div>
+						        </td>
+						        <td id="value_34_4" class="column-highlight" style="text-align: right;display: none;"></td>
+						        <td id="value_34_5" class="column-highlight" style="text-align: right;display: none;"></td>
+						      </tr>
+						      <tr class="section-result-maternity--not section-result-dietary-allowance">
+						        <td class="calc-result-table-h2">Allocation pour régime alimentaire</td>
+						        <td id="value_35_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_35_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_35_3" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">$</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small amount" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_35_3','value_35_5','amount', '17','19','6');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">ou</div>
+						        	<input type="text" name="" value="0" class=" calc-form-field-text calc-result-table-input-small percent" aria-required="true" aria-invalid="false" placeholder="" onchange="update_data('value_35_3','value_35_5','percent', '17','19','6');" style="display: none;">
+						        	<div class="calc-result-table-input-label" style="display: none;">%</div>
+						        </td>
+						        <td id="value_35_4" class="column-highlight" style="text-align: right;display: none;"></td>
+						        <td id="value_35_5" class="column-highlight" style="text-align: right;display: none;"></td>
+						      </tr>
+						      <tr class="section-result-maternity">
+						        <td class="calc-result-table-h2-total">Total des allocations spéciales</td>
+						        <td id="value_37_1" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_37_2" class="calc-result-table-h2-total column-highlight" style="text-align: right;"></td>
+						        <td id="value_37_3"></td>
+						        <td id="value_37_4" class="calc-result-table-h2-total column-highlight" style="text-align: right; display: none;"></td>
+						        <td id="value_37_5" class="calc-result-table-h2-total column-highlight" style="text-align: right; display: none;"></td>
+						      </tr>
+
+						      <tr>
+						        <td class="calc-result-table-heading calc-result-table-h1">Totaux pour la personne à charge ayant atteint l’âge de la majorité 2</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Démarrage</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Mensuel</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Total des 12 mois de soutien au revenu</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Total du soutien financier minimal</td>
+						        
+
+						        <!-- <td class="" style="font-size: 16px; padding-top: 4px !important; font-weight: bold;  background-color: #cee8ff69;" scope="column">
+						        	<div id="" style="width: 100%;/* float: left;*/ text-align: center;">In-Kind Support</div>
+						        	<div id="" style="width: 50%;float: left;text-align: right; padding-left: 40px; margin: 0;padding: 0; font-size: 12px;">One Time</div>
+						        	<div id="" style="width: 50%; float: left; text-align: right; padding-right: 40px; margin: 0;padding: 0; font-size: 12px;">Monthly</div> 
+						        </td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Adjusted Start-Up Amount</td>
+						        <td class="calc-result-table-heading column-highlight" scope="column" style="text-align: right;">Adjusted Monthly Support</td> -->					        
+						      </tr>
+
+						      <tr style="border-top: #e7f3fd 3px solid;">
+						        <td class="calc-result-table-h1">Sous-total de l’estimation des coûts du parrainage</td>
+						        <td id="value_38_1" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_38_2" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_38_3" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_38_4" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td>
+						        <!-- <td id="value_38_5" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td> -->
+						      </tr>
+
+
+						      <tr style="display: none;">
+						        <td class="calc-result-table-h1">Deductions</td>
+						        <td id="value_51_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_51_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_51_3"></td>
+						        <td id="value_51_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_51_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+
+						      <tr style="display: none;">
+						        <td class="calc-result-table-h2">Total Family Monthly Income</td>
+						        <td id="value_52_1" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_52_2" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_52_3"></td>
+						        <td id="value_52_4" class="column-highlight" style="text-align: right;"></td>
+						        <td id="value_52_5" class="column-highlight" style="text-align: right;"></td>
+						      </tr>
+
+						      <tr>
+						        <td class="calc-result-table-h1">Déductions en raison du revenu mensuel de la famille</td>
+						        <td id="value_53_1" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_53_2" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_53_3" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_53_4" class="column-highlight" style="text-align: right;"></td>
+						        <!-- <td id="value_53_5" class="column-highlight" style="text-align: right;"></td> -->
+						      </tr>
+
+						      <tr>
+						        <td class="calc-result-table-h1">Déductions en raison du soutien en nature</td>
+						        <td id="value_61_3_left" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_61_3_right" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_61_5a" class="calc-result-table-h1 column-highlight" style="text-align: right; font-weight: normal;"></td>
+						        <td id="value_62_4" class="column-highlight" style="text-align: right;"></td>
+						        <!-- <td id="value_5_5" class="column-highlight" style="text-align: right;"></td> -->
+						      </tr>
+
+						      <tr>
+						        <td class="calc-result-table-h1">Total de l’estimation des coûts minimaux du parrainage</td>
+						        <td id="value_61_4" class="calc-result-table-h1 column-highlight" style="text-align: right; text-decoration: underline;"></td>
+						        <td id="value_61_5" class="calc-result-table-h1 column-highlight" style="text-align: right; text-decoration: underline;"></td>
+						        <td id="value_61_6a" class="calc-result-table-h1 column-highlight" style="text-align: right; text-decoration: underline;"></td>
+						        <td id="value_62_5" class="calc-result-table-h1 column-highlight" style="text-align: right; text-decoration: underline;"></td>
+
+						        <!-- <td id="value_61_3" class="calc-result-table-h1 column-highlight" style="">
+						        	<div id="value_61_3_left" style="width: 50%; float: left; text-align: center;"></div>
+						        	<div id="value_61_3_right" style="width: 50%; float: left; text-align: right;"></div>
+						        </td>
+						        <td id="value_61_4" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td>
+						        <td id="value_61_5" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td> -->
+						      </tr>
+
+<!-- 						      <tr>
+						        <td class="calc-result-table-h1">Total Minimum Sponsorship Costs</td>
+						        <td id="value_61_1" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td>
+						        <td id="value_61_2" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td>
+						        <td id="value_61_3" class="calc-result-table-h1 column-highlight" style="">
+						        	<div id="value_61_3_left" style="width: 50%; float: left; text-align: center;"></div>
+						        	<div id="value_61_3_right" style="width: 50%; float: left; text-align: right;"></div>
+						        </td>
+						        <td id="value_61_4" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td>
+						        <td id="value_61_5" class="calc-result-table-h1 column-highlight" style="text-align: right;"></td>
+						      </tr> -->
+
+
+
+
+
+						      <tr class="show-multi-tab-info"  style="">
+						        <td class="calc-result-table-h1">
+						        Ventilation mensuelle :								</td>						        
+						        <td id="value_monthly_breakdown" class="calc-result-table-h1 column-highlight" style="text-align: right" colspan="5">
+
+						        	<table class="calc-result-table">
+
+
+						        		<tr>
+
+							        		<td id="value_monthly_breakdown__month_1__name">
+							        		<!-- Jan 2021 -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_2__name">
+							        		<!-- Feb -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_3__name">
+							        		<!-- Mar -->
+							        		</td>
+							        		
+							        		<td id="value_monthly_breakdown__month_4__name">
+							        		<!-- Apr -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_5__name">
+							        		<!-- May -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_6__name">
+							        		<!-- Jun -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_7__name">
+							        		<!-- Jul -->
+							        		</td>
+							        		
+							        		<td id="value_monthly_breakdown__month_8__name">
+							        		<!-- Aug -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_9__name">
+							        		<!-- Sep -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_10__name">
+							        		<!-- Oct -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_11__name">
+							        		<!-- Nov -->
+							        		</td>
+							        		
+							        		<td id="value_monthly_breakdown__month_12__name">
+							        		<!-- Dec -->
+							        		</td>		
+							        		
+							        		<td id="value_monthly_breakdown__month_13__name">
+							        		<!-- Jan 2022 -->
+							        		</td>								        							        		
+						        		</tr>
+
+						        		<tr>
+
+							        		<td id="value_monthly_breakdown__month_1__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		<!-- 0 -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_2__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		<!-- 0 -->
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_3__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+							        		
+							        		<td id="value_monthly_breakdown__month_4__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_5__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_6__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_7__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+							        		
+							        		<td id="value_monthly_breakdown__month_8__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_9__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_10__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+
+							        		<td id="value_monthly_breakdown__month_11__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>
+							        		
+							        		<td id="value_monthly_breakdown__month_12__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>	
+
+							        		<td id="value_monthly_breakdown__month_13__value" style="font-size: 11px; padding-left: 2px; min-width: 55px;">
+							        		0
+							        		</td>								        								        		
+						        		</tr>
+
+						        		<tr>
+
+							        		<td id="value_monthly_breakdown__details" colspan="13">
+							        		
+							        		</td>
+								        							        		
+						        		</tr>						        		
+
+						        	</table>
+						        	
+						        </td>
+						      </tr>						      
+
+
+						    </tbody>
+						    <tfoot>
+						      <!-- <tr>
+						        <td colspan="4">Note: The monthly support should be reduced by the amount that the family's net monthly income exceeds 50% of the monthly RAP amount, which is:</td>						        
+						        <td></td>
+						      </tr> -->
+						    </tfoot>
+						</table>
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+
+
+
+	<link rel="stylesheet" href="../../index_files/select2.css">
+	<link rel="stylesheet" href="../../index_files/style.css">
+
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+
+	<script src="../../js/vendor/jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript" src="../../index_files/select2.full.min.js.download"></script>
+
+	<script src="../../js/vendor/jquery-csv/src/jquery.csv.js"></script>
+
+	<link rel="stylesheet" href="../../css/calc.css">
+	<script type="text/javascript" src="../../js/calc3860.js?v=1"></script>
+
+
+	<script>
+
+
+	function add_tab()
+	{
+		window.parent.postMessage('add_tab','*');
+	}
+
+
+	</script>
+
+
+
+<script>
+
+window.addEventListener("message", receiveMessage2, false);
+
+function receiveMessage2(event)
+{
+	console.log("iframe message: receiveMessage2 ");
+
+    if (event) 
+    {
+    	console.log("iframe message: receiveMessage2 --");
+      	console.log(event);
+      	console.log(event['data']);
+
+      	if (event['data'] == "update_location")
+      	{
+      		//add_tab();
+
+      		calc_totals = JSON.parse(localStorage.calc_totals);
+
+      		console.log("iframe message: update_location ");
+		    console.log("---");
+		    console.log(calc_totals['1'].params.field__city);    
+		    console.log("---");
+		    console.log(calc_totals['1'].params.field__province);  
+		    console.log("---");
+		    console.log(calc_totals['1'].params.item_date_day, calc_totals['1'].params.item_date_month, calc_totals['1'].params.item_date_year);      
+
+		    console.log(calc_totals['1']);
+
+		    console.log("--- updating prov+city ", '#field__city__' + calc_totals['1'].params.field__province);
+
+
+		    //$('#field__city__on').val(calc_totals['1'].params.field__city).change();
+		    //$('#field__city__on').val(calc_totals['1'].params.field__city);
+
+
+		    // select city:
+		    $('#field__city__' + calc_totals['1'].params.field__province).val(calc_totals['1'].params.field__city);		    
+		    // select province:
+		    $('#field__province').val(calc_totals['1'].params.field__province);
+
+		    // show cities for prov:
+		    $(".selector-city").hide();
+		    //if (field__province == "bc")
+		    {
+		        $("#selector-city-" + calc_totals['1'].params.field__province).show();
+		        $("#field__city__" + calc_totals['1'].params.field__province).show();    
+		    }		    
+
+		    // select date:
+		    $('#item_date_day').val(calc_totals['1'].params.item_date_day);
+		    $('#item_date_month').val(calc_totals['1'].params.item_date_month);
+		    $('#item_date_year').val(calc_totals['1'].params.item_date_year);
+
+      	}
+
+        //click_button_inside_frame();
+    }
+}
+
+</script>	
+
+
+</body>
+
+<!-- Mirrored from www.rstp.ca/calc/components/single-calc/single-calc.php?mode=childtab&tab=3&lang=fr by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2023 15:05:55 GMT -->
+</html>

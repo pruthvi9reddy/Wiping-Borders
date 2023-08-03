@@ -1,0 +1,47 @@
+.bx-wrapper .bx-viewport{
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	left: -5px;
+	background: #fff;
+}
+
+.bx-wrapper img{
+	height: 140px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.bx-wrapper .bx-controls-direction a{
+	margin-top: -35px;
+}
+.bx-wrapper .bx-prev{
+	left: -20px;
+}
+.bx-wrapper .bx-next{
+	right: -10px;
+}
+h3.scroller-post-title{
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+.slide{
+	height: 300px;
+	position: relative;
+	text-align: center;
+}
+.slide-exceprt{
+	overflow: hidden;
+	display: block;
+	bottom: 47px;	
+	line-height: normal;
+	margin-bottom: 5px;
+}
+.slide-exceprt p{	
+	line-height: normal;
+}
+.submitbtn.onscroller{
+	position: absolute;
+	bottom: 0;
+}
